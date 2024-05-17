@@ -1,7 +1,7 @@
 import sqlite3
 
 def get_address(street, housenumber):
-    conn = sqlite3.connect('addresses.db')
+    conn = sqlite3.connect('C:\\Users\\HP\\Desktop\\911\\GeoCoder2\\addresses.db')
     cursor = conn.cursor()
 
     cursor.execute('''SELECT street || ', ' || housenumber AS full_address, latitude, longitude 
